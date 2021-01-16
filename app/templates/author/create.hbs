@@ -1,0 +1,31 @@
+<div class="slide-out-bg">
+  <div class="slide-out">
+    <div class="slide-out-card">
+      {{#link-to "author" class="btn-back"}}
+        <span class="sr-only">Back</span>
+      {{/link-to}}
+
+      <div class="slide-out-heading">
+        <div class="title">
+          <h3>New Author</h3>
+        </div>
+      </div>
+
+      <div class="slide-out-content">
+        <form {{ on "submit" this.save }} ...attributes>
+          <div class="field">
+            <label>First Name: {{model.first}}</label>
+            <Input type="text" placeholder="First Name" @value={{model.first}} />
+          </div>
+          <div class="field">
+            <label>Last Name: {{model.last}}</label>
+            <Input type="text" placeholder="Last Name" @value={{model.last}} />
+          </div>
+          <div class="form-footer">
+            <button type="submit" class="btn-submit">Save</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
