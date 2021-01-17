@@ -12,7 +12,7 @@
       </div>
 
       <div class="slide-out-content">
-        <form {{ on "submit" this.save }} ...attributes>
+        <form {{ on "submit" this.save }}>
           <div class="field">
             <label>First Name: {{model.first}}</label>
             <Input type="text" placeholder="First Name" @value={{model.first}} />
