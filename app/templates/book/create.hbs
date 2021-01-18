@@ -15,10 +15,9 @@
         <form>
           <p class="control">
             <PowerSelect
-              @options={{model}}
-              @onChange={{this.selectAuthor}}
-              @searchField="first"
-              @searchEnabled={{true}} as |author|>
+              @searchEnabled={{true}}
+              @search={{this.searchAuthor}}
+              @onChange={{this.selectAuthor}} as |author|>
               {{author.last}}, {{author.first}}
             </PowerSelect>
           </p>
