@@ -10,8 +10,6 @@ export default class AuthorFormComponent extends Component {
   submitChanges(ev) {
     ev.preventDefault();
 
-    console.log("teste");
-
     this.args.onsubmit({
       first: this.first,
       last: this.last
